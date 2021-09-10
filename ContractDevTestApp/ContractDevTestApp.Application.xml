@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ContractDevTestApp.Application</name>
+    </assembly>
+    <members>
+        <member name="T:ContractDevTestApp.Application.Commands.Authorize.AuthorizeCommand">
+            <summary>
+            Model to auth
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ContractDevTestApp</name>
+    </assembly>
+    <members>
+        <member name="M:ContractDevTestApp.Controllers.AuthController.Authorize(ContractDevTestApp.Application.Commands.Authorize.AuthorizeCommand,System.Threading.CancellationToken)">
+            <summary>
+            Authorize user
+            </summary>
+            <param name="authorizeCommand">View model with authentication params</param>
+            <param name="cancellationToken">Token can be passed to interrupt request</param>
+            <returns>Token, its expiration date, user info</returns>
+        </member>
+        <member name="M:ContractDevTestApp.Controllers.UsersController.Create(ContractDevTestApp.Application.Commands.User.AddUser.AddUserCommand,System.Threading.CancellationToken)">
+            <summary>
+            Create new User
+            </summary>
+            <param name="addUserCommand"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContractDevTestApp.Controllers.UsersController.GetPredefined(System.Threading.CancellationToken)">
+            <summary>
+            Get all users
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContractDevTestApp.Controllers.UsersController.GetById(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Get user by id
+            </summary>
+            <param name="id"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContractDevTestApp.Controllers.UsersController.Update(ContractDevTestApp.Application.Commands.User.UpdateUser.UpdateUserCommand,System.Threading.CancellationToken)">
+            <summary>
+            Update existing user
+            </summary>
+            <param name="updateUserCommand"></param>
+            <param name="cancelationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContractDevTestApp.Controllers.UsersController.Delete(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Delete User
+            </summary>
+            <param name="id">User Id</param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ContractDevTestApp.Models.CommonResponseDto">
+            <summary>
+            Common response without data
+            </summary>
+        </member>
+        <member name="T:ContractDevTestApp.Models.CommonResponseDto`1">
+            <summary>
+            Common response with data.
+            </summary>
+            <typeparam name="TResponseData"></typeparam>
+        </member>
+        <member name="P:ContractDevTestApp.Models.CommonResponseDto`1.Data">
+            <summary>
+            Payload for response.
+            </summary>
+        </member>
+        <member name="T:ContractDevTestApp.Swagger.AuthResponsesOperationFilter">
+            <summary>
+            Filter to add swagger pad locks only to authorize endpoints
+            </summary>
+        </member>
+    </members>
+</doc>
